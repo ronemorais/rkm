@@ -1,0 +1,43 @@
+@media (min-width: 1480px) {
+    .dado {
+        width: 100%;
+        max-width: 294px;
+    }
+}
+
+@media (max-width: 760px) {
+
+    .infoLateral {
+        max-width: 100%;
+    }
+
+    .areaInfo,
+    .areaInfoForm {
+        flex-wrap: wrap-reverse;
+    }
+
+    .paginaLogin {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .areaMarca {
+        width: 100vw;
+        height: 25%;
+    }
+
+    .areaMarca img {
+        width: 100px;
+    }
+
+    .areaLogin {
+        width: 100vw;
+        height: 75%;
+        background-image: none;
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 1.4em;
+    }
+}

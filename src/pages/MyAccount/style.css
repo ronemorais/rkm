@@ -1,0 +1,25 @@
+.areaAvatar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+}
+.areaAvatar .avatar, .areaAvatar .avatarIniciais{
+    margin-bottom: 10px;
+}
+
+.informacoes{
+    width: 100%;
+}
+
+.areaBtn{
+    display: flex;
+    margin-top: 10px;
+}
+
+.areaAvatar{
+    display: flex;
+    width: 100%;
+    padding: 0;
+}

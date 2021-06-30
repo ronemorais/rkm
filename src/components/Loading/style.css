@@ -1,0 +1,15 @@
+.areaLoading{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.areaLoading small{
+    display: inline-block;
+    margin-top: 20px;
+    color: #6D819C;
+}

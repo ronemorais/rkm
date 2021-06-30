@@ -1,0 +1,23 @@
+.tag{
+    background-color: #6D819C;
+    border-radius: 20px;
+    color: #fff;
+    padding: 2px 10px;
+    text-align: center;
+}
+
+.tagActive{
+    background-color: #65d37c;
+}
+
+.tagInactive{
+    background-color: #ef476f;
+}
+
+.bullet{
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    display: flex;
+    align-self: center;
+}

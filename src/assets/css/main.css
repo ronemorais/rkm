@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap');
+@import 'https://cdn.jsdelivr.net/npm/boxicons@2.0.4/css/boxicons.min.css';
+@import './animate.min.css';
+
+
+html,
+body {
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    background-color: #F7F7FF;
+    font-family: 'Rubik', sans-serif;
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box !important;
+    outline: none !important;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+h1 {
+    color: #2b2d42;
+    font-size: 1.7em;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: -1px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    line-height: 100%;
+}
+
+h1 small {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #6D819C;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+h1 small b {
+    color: #5856D6;
+}
+
+h3 {
+    color: #2b2d42;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: -1px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 10px;
+    justify-content: space-between;
+}
+
+h3 span {
+    font-size: 12px;
+    color: #6D819C;
+    font-weight: 400;
+    letter-spacing: normal;
+}
+
+.container {
+    padding: 32px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px 0 #D9D9E1;
+}
+
+h4 {
+    color: #2b2d42;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: -1px;
+
+    align-items: center;
+    align-content: center;
+    padding-bottom: 10px;
+
+    margin: 10px 0;
+}
+
+.areaInfo,
+.areaInfoForm {
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    gap: 20px;
+}
+
+.informacoes .container {
+    margin-bottom: 20px;
+}
+
+.infoLateral {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    gap: 20px;
+}
+
+.areaInfo>.container {
+    margin-bottom: 20px;
+}
+
+.cardFull {
+    width: 100%;
+}
+
+th {
+    font-weight: 600 !important;
+    font-family: 'Rubik', sans-serif !important;
+    color: #2b2d42 !important;
+    font-size: 11px !important;
+}
+
+td {
+    font-family: 'Rubik', sans-serif !important;
+    font-size: 12px !important;
+}
+
+td a {
+    font-family: 'Rubik', sans-serif !important;
+    color: #2b2d42;
+    text-decoration: underline;
+}
+
+td a:hover {
+    color: #C4A07C;
+}
+
+.inputGrid {
+    display: flex;
+    gap: 20px;
+}
+
+.uk-table-striped tbody tr:nth-of-type(odd),
+.uk-table-striped>tr:nth-of-type(odd) {
+    background: #6d819c10;
+    border-top: 1px solid #6d819c1f;
+    border-bottom: 1px solid #6d819c1f;
+}
+
+.trInfo {
+    display: flex;
+}
+
+.trInfo .avatar,
+.trInfo .avatarIniciais {
+    margin-right: 8px;
+}
+
+.badge {
+    background-color: #6D819C;
+    border-radius: 20px;
+    color: #fff;
+    padding: 2px 10px;
+    text-align: center;
+}
+
+.pagination {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 30px 0;
+    align-self: flex-end;
+
+}
+
+.pagination a {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2px;
+    padding: 1px 8px;
+    color: #6D819C;
+    border-radius: 4px;
+    transition: all linear 160ms;
+    text-decoration: none !important;
+    background-color: #fff;
+}
+
+.pagination a:hover {
+    color: #2b2d42;
+}
+
+.pagination .active a {
+    color: #fff !important;
+    background-color: #C4A07C;
+}
+
+.pagination .active {
+    background-color: #C4A07C;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+
+.modal {
+    top: 0;
+    left: 0;
+    background-color: #2b2d426b;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 99999999;
+    padding-top: 80px;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+.modal .container {
+    width: 100%;
+    max-width: 960px;
+    max-height: 85vh;
+    overflow-y: auto;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.13);
+    background-color: #fff;
+    opacity: 1;
+}
+
+.footerModal{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+    gap: 20px;
+}
+.modal .container h3 {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.btnMenu i {
+    color: #2b2d42;
+}
+
+.info-user {
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    padding: 0;
+}
+
+.info-user p {
+    display: inline-block;
+    padding: 0 10px;
+
+}
+
+.uk-label {
+    font-family: 'Rubik', sans-serif !important;
+    font-size: 12px;
+    border-radius: 20px;
+    text-transform: none;
+    padding: 4px 12px;
+    background-color: #6D819C;
+}
+
+
+.btnSmall {
+    font-family: 'Rubik', sans-serif !important;
+    background-color: #F7F7FF;
+    border: 1px solid #D9D9E1;
+    color: #2b2d42;
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    transition: all linear 160ms;
+}
+
+.btnSmall:hover {
+    color: #fff;
+    background-color: #6D819C;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+
+.areaDados {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    padding-top: 10px;
+}
+
+.dado {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #D9D9E1;
+    align-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    min-width: 135px;
+}
+
+.dado label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-family: 'Rubik', sans-serif;
+    color: #6D819C;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.dado p {
+    display: inline-block;
+    font-family: 'Rubik', sans-serif;
+    font-weight: normal;
+    color: #2b2d42;
+    font-size: 12px;
+    margin: 0;
+}
+
+.dado p small {
+    font-weight: 400;
+}
+
+.texto {
+    display: inline-block;
+    font-family: 'Rubik', sans-serif;
+    font-weight: normal;
+    color: #2b2d42;
+    font-size: 12px;
+    margin: 0;
+}
+
+.itemEtapa {
+    display: flex;
+    gap: 10px;
+}
+
+.itemEtapa .uk-badge {
+    font-size: 12px !important;
+    display: inline-flex;
+    background-color: #C4A07C;
+    margin-right: 8px;
+}
+
+.thumbDoc{
+    transition: all linear 140ms;
+}
+.thumbDoc:hover{
+    position: relative;
+    z-index: 9999;
+    transform: scale(3.2);
+}
+
+.contractCss{
+    all: initial !important;
+}
+
+.contractCss * {
+    font-family: Arial, Helvetica, sans-serif !important;
+    color: #111 !important;
+}
+
+.contractCss h1 {
+    font-size: 22px !important;
+}
+
+.contractCss h2 {
+    font-size: 20px !important;
+}
+
+.contractCss h3 {
+    font-size: 16px !important;
+    text-decoration: underline !important;
+}
+
+.contractCss p,
+.contractCss li {
+    font-size: 14px !important;
+}
+
+.contractCss table {
+    width: 100% !important;
+    margin: 30px 0 !important;
+}
+
+.contractCss
+tr,
+.contractCss th,
+.contractCss td {
+    border: 1px solid #ccc !important;
+    padding: 4px !important;
+    font-size: 14px !important;
+}
+
+.done{
+    background-color: #2b2d42 !important;
+    color: #fff;
+}
+
+.open{
+    background-color: #118ab28f !important;
+    color: #fff;
+}
+
+.canceled{
+    background-color: #ef476ea2 !important;
+    color: #fff;
+}
+
+.confirm {
+        background-color: #06d69eb6 !important;
+        color: #fff;
+}
+
+.dot{
+    width: 8px;
+    height: 8px;
+    background-color: #6D819C;
+    display: block;
+    border-radius: 10px;
+}
+
+.thumbSignature{
+    width: 100%;
+    height: 80px;
+    margin-bottom: 20px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

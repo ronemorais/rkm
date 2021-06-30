@@ -1,0 +1,27 @@
+
+
+.areaDashboard{
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    gap: 20px;
+}
+
+
+.cardDash{
+    width: 100%;
+}
+
+.cardDash h1{
+    color: #C4A07C;
+    flex-direction: column;
+    text-align: left;
+    justify-content: left;
+    align-content: flex-start;
+    align-items: flex-start;
+    font-weight: 500;
+}
+.cardDash h1 small{
+    margin: 10px 0;
+}

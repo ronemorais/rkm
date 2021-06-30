@@ -1,0 +1,78 @@
+.paginaLogin{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.areaMarca{
+    width: 35%;
+    background-image: url('../../assets/images/bg_login.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 28px;
+}
+
+.areaMarca img{
+    width: 160px;
+    height: auto;
+}
+
+.areaLogin{
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 28px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: 8% bottom;
+    background-size: 25%;
+    box-shadow: -29px 2px 93px 0 rgba(0,0,0,0.1);
+}
+
+.figuraLogin{
+    width: 55%;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.formLogin{
+    width: 100%;
+    max-width: 400px;
+    margin-top: -80px;
+}
+
+
+.formLogin p{
+    font-size: 0.9em;
+    color: #2b2d42;
+    transition: color linear 160ms;
+    display: inline-block;
+    margin: 20px 0;
+    font-weight: 400;
+}
+
+
+.areaSubmit{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.link{
+    font-size: 0.9em;
+    color: #6D819C;
+    transition: color linear 160ms;
+}
+
+.link:hover{
+    color: #2b2d42;
+}
+

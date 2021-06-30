@@ -1,0 +1,15 @@
+.btnLink{
+    font-size: 14px;
+    color: #6D819C;
+    transition: color linear 160ms;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: underline;
+}
+.btnLink:hover{
+    color: #2b2d42;
+}

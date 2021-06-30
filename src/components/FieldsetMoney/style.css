@@ -1,0 +1,39 @@
+.fieldset {
+    width: 100%;
+    max-width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    padding: 4px 0;
+}
+
+.fieldset label {
+    display: inline-block;
+    margin-bottom: 6px !important;
+    font-size: 0.7em !important;
+    color: #2b2d42ce;
+    font-weight: 500 !important;
+    
+}
+
+.campos {
+    font-family: 'Rubik', sans-serif;
+    border: 1px solid #E1E3E8;
+    padding: 14px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    font-size: 0.8em !important;
+    color: #2b2d42;
+    font-weight: 400 !important;
+    transition: border linear 160ms;
+    background-color: #fff;
+}
+
+
+.campos:focus {
+    border: 1px solid #C4A07C;
+}
+
+.campos::placeholder {
+    color: #6d819c94;
+    font-weight: 300;
+}

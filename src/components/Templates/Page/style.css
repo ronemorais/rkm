@@ -1,0 +1,252 @@
+.pagina{
+    display: flex;
+    width: 100vw;
+    height: 100%;
+}
+
+.header{
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px 28px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    box-shadow: 0 2px 4px 0 rgba(2,33,67,0.09);
+}
+
+.header img{
+    width: 130px;
+}
+
+.menuMobi{
+    display: none;
+}
+
+.aside{
+    width: 280px;
+    min-height: 100vh;
+    background-color: #002143;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.contentAside{
+    /* padding: 84px 28px 28px 28px; */
+    padding-top: 74px;
+    padding-right: 28px;
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+}
+
+.contentAside p{
+    font-size: 14px;
+    color: rgba(0,0,0,0.5);
+    margin-bottom: 8px;
+}
+
+.contentAside ul{
+    list-style: none;    
+}
+
+.contentAside ul a{
+    text-decoration: none;
+}
+.contentAside ul li{
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 14px;
+    transition: all linear 160ms;
+    cursor: pointer;
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.contentAside ul .active{
+    color: #fff;
+    font-weight: 500;
+    transition: all linear 160ms;
+}
+
+.contentAside ul .active::after{
+    width: 4px;
+    height: 20px;
+    background-color: #fff;
+    position: absolute;
+    left: 0px;
+    content: "";
+    margin-top: -1px;
+    border-radius: 0px 2px 2px 0;
+}
+
+.contentAside ul li i{
+    display: block;
+    font-size: 18px;
+    margin-right: 8px;
+    margin-top: -1px;
+}
+
+.contentAside ul li:hover{
+    color: #fff;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 84px 28px 28px 28px;
+    box-shadow: 0px 2px 40px 0 rgba(0,0,0,0.06);
+    min-height: 100vh;
+}
+.btnMenu{
+    display: none;
+}
+
+
+.areaSubMenu{
+    height: 60px;
+    position: relative;
+}
+
+.areaSubMenu:hover .submenu{
+    display: block;
+}
+
+.areaProfile{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.areaProfile .avatar, .areaProfile .avatarIniciais{   
+    margin-left: 14px;
+    /* border: 2px solid #C4A07C */
+}
+
+.infoProfile{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.infoProfile p{
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #002143;
+    line-height: 100%;
+    text-align: right;
+    display: inline-block;
+    padding-top: 24px;
+}
+
+.infoProfile p small{
+    font-weight: 500;
+    color: #2b2d428e;
+
+}
+.submenu{
+    display: none;
+    background-color: #fff;
+    background: #FFFFFF;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+    border-radius: 0 0 8px 8px;
+    padding: 10px 24px;
+}
+
+.submenu a{
+    font-size: 12px;
+    color: #002143;
+    text-decoration: none;
+    transition: all linear 160ms;
+}
+
+.submenu a:hover{
+    color: #C4A07C;
+}
+
+.submenu a li{
+    list-style: none;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.submenu a li i{
+    font-size: 18px;
+    display: inline-block;
+}
+
+
+.dropMenu{
+    /* background-color: red; */
+    margin: 0;
+    padding-top: 16px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 0 0 6px 6px ;
+}
+
+.dropMenu a li{
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    border: none;
+    margin-bottom: 13px;
+    font-size: 13px;
+}
+
+
+
+@media (max-width: 760px) {
+    .areaSubMenu{
+        display: none;
+    }
+    .aside{
+        display: none;
+    }
+    .btnMenu{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        font-size: 24px;
+        color: #fff;
+        opacity: 0.6;
+        transition: all linear 160ms;
+    }
+
+    .btnMenu:hover{
+        opacity: 1;
+    }
+
+    .menuMobi{
+        width: 100vw;
+        background-color: #2b2d42;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        position: relative;
+        z-index: 0;
+    }
+
+
+}

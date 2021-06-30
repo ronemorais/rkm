@@ -1,0 +1,82 @@
+.areaFuncionalidades {
+    margin-top: 20px;
+}
+
+.areaBtnPlan {
+    margin-top: 20px;
+}
+
+.areaAddress {
+    display: flex;
+    gap: 20px;
+}
+
+.areaThumbs {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px
+}
+
+.areaThumbs .thumbPhoto {
+    display: flex;
+    width: 166px;
+    height: 220px;
+    border-radius: 8px;
+    padding: 16px;
+    align-content: flex-end;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.areaThumbs .btnRemove {
+    background-color: #ef476f;
+    color: #fff;
+    cursor: pointer;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    transition: all linear 200ms;
+}
+
+.areaThumbs .btnRemove:hover {
+    transform: scale(1.1);
+}
+
+
+.itemDiferencial .btnRemove {
+    color: #ef476f;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all linear 200ms;
+}
+
+.itemDiferencial .btnRemove:hover {
+    transform: scale(1.1);
+}
+
+.planta {
+    width: 475px;
+    height: 580px;
+    margin-top: 20px;
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+}
+
+.baseline {
+    align-items: flex-end;
+}
+
+.btnAdd {
+    margin-bottom: 16px;
+}

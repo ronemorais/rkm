@@ -1,0 +1,26 @@
+.btn {
+    display: flex;
+    min-width: 100px;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    border-radius: 6px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background linear 160ms;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+}
+
+.btnInline {
+    background-color: #fff;
+    color: #2b2d42;
+    border: 1px solid #2b2d4244;
+}
+
+.btnInline:hover {
+    background-color: #2b2d42;
+    color: #fff;
+}
